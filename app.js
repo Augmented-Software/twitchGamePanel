@@ -1,6 +1,6 @@
 /* jshint esversion: 6 */
 import express from 'express';
-
+const app = express();
 const router = express.Router();
 
 const asyncMiddleware = fn => (req, res) => {
