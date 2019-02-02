@@ -1,6 +1,19 @@
 /* jshint esversion: 6 */
 import express from 'express';
+import bodyParser from 'body-parser';
+
+
 const app = express();
+
+  app.use(bodyParser.urlencoded({extended: true}));
+  app.get('https://api.twitch.tv/kraken/channels/152033881/', function(request, response) {
+    console.log(request.params);
+  });
+
+app.listen(8080);
+
+/*
+
 const router = express.Router();
 
 const asyncMiddleware = fn => (req, res) => {
@@ -11,13 +24,14 @@ const asyncMiddleware = fn => (req, res) => {
 router.get('/', asyncMiddleware(async (req, res) => {
   let
 }));
+/*
 
 
 /* the below line requests my account (retrieved the id already) and reveals the current set game*/
 // https://api.twitch.tv/kraken/channels/152033881/
 
 /*
-//if a game is returned from the request 
+//if a game is returned from the request
 if (user.game) {
   //check if game is in list
 
