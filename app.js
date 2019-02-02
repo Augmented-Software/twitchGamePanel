@@ -8,10 +8,10 @@ const app = express();
 const config = {
   'ClientID': process.env.TWITCH_CLIENT_ID
 };
-
+  console.log('starting process...');
   app.use(bodyParser.json());
   app.get('https://api.twitch.tv/kraken/channels/152033881/' + config.ClientID, function(request, response) {
-
+    console.log('get request sent');
 /*    let options = {
       headers: {
         ClientID: 'se6fitx48a5t0ilz3teehwa5o6xohk'
@@ -22,6 +22,13 @@ const config = {
   });
 
 app.listen(8080);
+
+/*
+https://api.twitch.tv/helix/streams?user_id=152033881
+// this new api request works, returning an empty data [] if offline and returning data of id, user id, username, game id, community ids, title, viewers, etc.
+//user id hardcoded in is my own
+*/
+
 
 /*
 
