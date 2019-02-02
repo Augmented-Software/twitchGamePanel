@@ -1,12 +1,23 @@
 /* jshint esversion: 6 */
-import express from 'express';
-import bodyParser from 'body-parser';
-
+const express = require('express');
+const bodyParser = require('body-parser');
+const axios = require('axios');
 
 const app = express();
 
-  app.use(bodyParser.urlencoded({extended: true}));
-  app.get('https://api.twitch.tv/kraken/channels/152033881/', function(request, response) {
+const config = {
+  'ClientID': process.env.TWITCH_CLIENT_ID
+};
+
+  app.use(bodyParser.json());
+  app.get('https://api.twitch.tv/kraken/channels/152033881/' + config.ClientID, function(request, response) {
+
+/*    let options = {
+      headers: {
+        ClientID: 'se6fitx48a5t0ilz3teehwa5o6xohk'
+      }
+    };
+*/
     console.log(request.params);
   });
 
