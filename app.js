@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios');
 
+
 const app = express();
 
 const config = {
@@ -27,6 +28,7 @@ app.listen(8080);
 https://api.twitch.tv/helix/streams?user_id=152033881
 // this new api request works, returning an empty data [] if offline and returning data of id, user id, username, game id, community ids, title, viewers, etc.
 //user id hardcoded in is my own
+//returns game ID instead of game NAME ..need to figure out how to reconcile
 */
 
 

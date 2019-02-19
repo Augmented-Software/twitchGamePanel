@@ -1,0 +1,9 @@
+$primaryColor: #4f1e50;
+$secondaryColor: #911585;
+$offWhite: floralwhite;
+
+body {
+  background-color: $primaryColor;
+  color: $offWhite;
+  border: 3px inset $secondaryColor;
+}
