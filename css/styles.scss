@@ -6,17 +6,17 @@ body {
   #panelArea {
     background-color: $primaryColor;
     border: 3px inset $secondaryColor;
-    max-width: 320px;
     max-height: 300px;
-
+    max-width: 320px;
+    overflow: scroll;
     h1 {
       color: $offWhite;
     }
 
     ol {
       li {
-        color: $offWhite;
         border-top: 1px solid $secondaryColor;
+        color: $offWhite;
       }
     }
   }

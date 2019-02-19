@@ -1,10 +1,11 @@
 body #panelArea {
   background-color: #4f1e50;
   border: 3px inset #911585;
+  max-height: 300px;
   max-width: 320px;
-  max-height: 300px; }
+  overflow: scroll; }
   body #panelArea h1 {
     color: floralwhite; }
   body #panelArea ol li {
-    color: floralwhite;
-    border-top: 1px solid #911585; }
+    border-top: 1px solid #911585;
+    color: floralwhite; }
