@@ -3,7 +3,21 @@ $secondaryColor: #911585;
 $offWhite: floralwhite;
 
 body {
-  background-color: $primaryColor;
-  color: $offWhite;
-  border: 3px inset $secondaryColor;
+  #panelArea {
+    background-color: $primaryColor;
+    border: 3px inset $secondaryColor;
+    max-width: 320px;
+    max-height: 300px;
+
+    h1 {
+      color: $offWhite;
+    }
+
+    ol {
+      li {
+        color: $offWhite;
+        border-top: 1px solid $secondaryColor;
+      }
+    }
+  }
 }

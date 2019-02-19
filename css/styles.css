@@ -1,4 +1,10 @@
-body {
+body #panelArea {
   background-color: #4f1e50;
-  color: floralwhite;
-  border: 3px inset #911585; }
+  border: 3px inset #911585;
+  max-width: 320px;
+  max-height: 300px; }
+  body #panelArea h1 {
+    color: floralwhite; }
+  body #panelArea ol li {
+    color: floralwhite;
+    border-top: 1px solid #911585; }
