@@ -1,23 +1,52 @@
 $primaryColor: #4f1e50;
 $secondaryColor: #911585;
+$hoverColor: #910ea1;
 $offWhite: floralwhite;
 
 body {
+  max-height: 300px;
+  max-width: 320px;
+  h1 {
+    background-color: $primaryColor;
+
+    color: $offWhite;
+  }
   #panelArea {
     background-color: $primaryColor;
     border: 3px inset $secondaryColor;
-    max-height: 300px;
-    max-width: 320px;
-    overflow: scroll;
-    h1 {
-      color: $offWhite;
-    }
+    width: 100%;
 
-    ol {
-      li {
-        border-top: 1px solid $secondaryColor;
-        color: $offWhite;
+    overflow: auto;
+
+    #categoryList {
+      max-height: 300px;
+      ol {
+
+        li {
+          border-top: 1px solid $secondaryColor;
+          color: $offWhite;
+        }
       }
     }
   }
+
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $primaryColor;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $secondaryColor;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $hoverColor;
+}
 }
