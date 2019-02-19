@@ -1,3 +1,7 @@
+@font-face {
+  font-family: TitleFont;
+  src: url(../fonts/TitilliumWeb-SemiBold.ttf); }
+
 body {
   max-height: 300px;
   max-width: 320px;
@@ -5,24 +9,25 @@ body {
   /* Track */
   /* Handle */
   /* Handle on hover */ }
-  body h1 {
-    background-color: #4f1e50;
+  body h2 {
+    background-color: #4D367A;
+    font-family: TitleFont;
     color: floralwhite; }
   body #panelArea {
-    background-color: #4f1e50;
-    border: 3px inset #911585;
+    background-color: #4D367A;
+    border: 3px inset #910ea1;
     width: 100%;
     overflow: auto; }
     body #panelArea #categoryList {
       max-height: 300px; }
       body #panelArea #categoryList ol li {
-        border-top: 1px solid #911585;
+        border-top: 1px solid #910ea1;
         color: floralwhite; }
   body ::-webkit-scrollbar {
     width: 10px; }
   body ::-webkit-scrollbar-track {
-    background: #4f1e50; }
+    background: #4D367A; }
   body ::-webkit-scrollbar-thumb {
-    background: #911585; }
-  body ::-webkit-scrollbar-thumb:hover {
     background: #910ea1; }
+  body ::-webkit-scrollbar-thumb:hover {
+    background: #911585; }
